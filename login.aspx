@@ -3,14 +3,22 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
      <div class="box" action="login.aspx" method="post">
          <h1>LOGIN</h1>
-                <asp:TextBox ID="TextBoxUsername" runat="server" placeholder="user name"></asp:TextBox>         
+                <asp:TextBox ID="TextBoxUsername" runat="server"  placeholder="user name"></asp:TextBox>         
          <asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password" placeholder="password"></asp:TextBox>
   <asp:Button ID="Buttonsubmit" class="btn btn-success" OnClick="Buttonsubmit_Click" runat="server" Text="Login" BackColor="black" Font-Bold="true" forecolor="red" font-weight=bold />
                 <asp:Label ID="LabelMessage" runat="server" Text="" ForeColor="red" Font-Size="Small"></asp:Label>
      </div>
       <style>
           .box{
-              background-color:black;
+             background-color:black;
+              min-height:50vh;
+              width:50%;
+              border-radius:30px;
+              box-shadow:5px 5px 6px rgb(255, 0, 0),-5px -5px 6px rgb(255, 0, 0);
+              justify-content:center;
+              align-items:center;
+              margin-left:250px;
+
           }
         
         
@@ -35,6 +43,7 @@
             border-radius:24px;
             transition:0.25s;
             cursor:pointer;
+            
         }
         .box h1{
             color:aqua;
@@ -65,7 +74,7 @@
         }
         .box input[type="submit"]:hover{
             background:#2ecc71;
-          
+          background-color:aqua;
         }
     </style>
     

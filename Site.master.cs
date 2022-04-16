@@ -87,9 +87,10 @@ public partial class SiteMaster : MasterPage
     {
         Response.Redirect("Login.aspx");
     }
-    protected void ButtonLogout_click(object sender, EventArgs e)
+    protected void LinkButtonLogout_Click(object sender, EventArgs e)
     {
-        Session["UserId"] = " ";
         Response.Redirect("Default.aspx");
     }
+
+
 }

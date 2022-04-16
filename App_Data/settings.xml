@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <HWsettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <DefaultText1>kts</DefaultText1>
-  <DefaultText2>infotech</DefaultText2>
-  <HeaderText>irshtah</HeaderText>
-  <FooterText>ahamed</FooterText>
+  <DefaultText1>infotech</DefaultText1>
+  <DefaultText2>kts</DefaultText2>
+  <HeaderText>ahamed</HeaderText>
+  <FooterText>irshath</FooterText>
 </HWsettings>

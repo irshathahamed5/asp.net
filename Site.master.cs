@@ -68,13 +68,25 @@ public partial class SiteMaster : MasterPage
     protected void Page_Load(object sender, EventArgs e)
     {
         HWsettings settings = (HWsettings)Application["settings"];
+        if (Session["UserId"] == null)
+        {
+          LinkButtonlogout.Visible = false;
+        }
+        else
+        {
+           LinkButtonlogout.Visible = true;
+        }
+
+
+
+
         Labelcounter.Text = "you are visitor NO" + Session["counter"].ToString();
         try
         {
             LabelHeaderText.Text = settings.HeaderText;
             LabelFooterText.Text = settings.FooterText;
         }
-        catch (Exception ex)
+        catch (Exception )
         { }
 
     }
@@ -89,7 +101,9 @@ public partial class SiteMaster : MasterPage
     }
     protected void LinkButtonLogout_Click(object sender, EventArgs e)
     {
+        Session.Remove("UserId");
         Response.Redirect("Default.aspx");
+
     }
 
 

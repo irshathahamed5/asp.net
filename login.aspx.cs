@@ -24,6 +24,7 @@ public partial class HWlogin : System.Web.UI.Page
         }
         else
         {
+            Session.Add("User", UserName);
             LabelMessage.Text = "please enter the valid user name and password";
         }
     }
